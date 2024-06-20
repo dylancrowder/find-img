@@ -1,8 +1,9 @@
+import { useMediaQuery } from 'react-responsive';
 export function Nav({ query, setQuery, handleSearch, isLoading }) {
   return (
     <nav>
       <div className="title-container">
-        <h3>findPhoto</h3>
+        <h3>findPhwoto</h3>
       </div>
       <div className="search-container">
         <input
