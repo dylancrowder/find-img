@@ -33,14 +33,8 @@ export function GetImg() {
   }, []);
 
   useEffect(() => {
-    if (query) {
-      const delayDebounce = setTimeout(() => {
-        fetchAxios(query);
-      }, 500);
-
-      return () => clearTimeout(delayDebounce);
-    }
-  }, []);
+    fetchAxios();
+  }, [fetchAxios]);
 
   const handleSearch = () => {
     fetchAxios(query);
