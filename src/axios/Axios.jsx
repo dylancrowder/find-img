@@ -38,6 +38,7 @@ export function GetImg() {
 
   const handleSearch = () => {
     fetchAxios(query);
+    setQuery("");
   };
 
   return (
