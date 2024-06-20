@@ -3,7 +3,7 @@ export function Nav({ query, setQuery, handleSearch, isLoading }) {
   return (
     <nav>
       <div className="title-container">
-        <h3>findPhwoto</h3>
+        <h3>findPhoto</h3>
       </div>
       <div className="search-container">
         <input
