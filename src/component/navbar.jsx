@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'react-responsive';
+
 export function Nav({ query, setQuery, handleSearch, isLoading }) {
   return (
     <nav>
