@@ -18,7 +18,8 @@ export function GetImg() {
 
     try {
       const response = await axios.get(
-        `http://localhost:8080/get?query=${searchQuery}`
+        `https://back-ing-find.vercel.app/get?query=${searchQuery}`,
+        { withCredentials: true }
       );
       const images = response.data.hits;
       setData(images);
